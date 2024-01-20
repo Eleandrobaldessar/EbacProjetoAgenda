@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"><header>
+            <img src="Imagens/logo-contatos.png" alt="Agenda de contatos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contato">
+            <input id="nome-contato" type="text"  name="" required placeholder="Nome Completo">
+            <input id="numero-contato" type="number" name="" required placeholder="Numero" pattern="[0-9]{8}" title="Digite exatamente 8 dígitos numéricos">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <!-- cellspacing retira espaçamento entre as colunas -->
+        <table cellspacing = "0"> 
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>
+                </tr>
+            </thead>
+            <tbody></tbody> 
+    </div>
+    <footer>
+        &copy;Copyright 2024 - Eleandro Baldessar
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
